@@ -1,0 +1,134 @@
+"*":
+  "autocomplete-python":
+    useKite: false
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "tree-view"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "atom-darcula"
+      "atom-dark-syntax"
+    ]
+  editor:
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "88eb0d62-70f1-4c93-8de5-52abd188987a"
+  nuclide:
+    "atom-ide-code-format":
+      formatOnType: false
+    "atom-ide-diagnostics-ui": {}
+    "nuclide-buck":
+      buildDbErrorNotify: false
+      compileErrorDiagnostics: false
+    "nuclide-clang":
+      enableDefaultFlags: false
+    "nuclide-code-search":
+      localUseVcsSearch: false
+      remoteUseVcsSearch: false
+    "nuclide-ctags":
+      disableWithHack: false
+    "nuclide-debugger":
+      showDebuggerOnBpSet: false
+    "nuclide-debugger-native":
+      clientLogLevel: "DEBUG"
+      useTerminal: false
+    "nuclide-debugger-new":
+      showDebuggerOnBpSet: false
+    "nuclide-debugger-php":
+      stopOneStopAll: false
+    "nuclide-file-tree":
+      allowKeyboardPrefixNavigation: false
+      autoExpandSingleChild: false
+      hideIgnoredNames: false
+      showOpenFiles: false
+      showUncommittedChanges: false
+    "nuclide-flow":
+      enableReferencesHighlight: false
+    "nuclide-home":
+      showHome: false
+    "nuclide-notifications":
+      onlyNativeFriendly: false
+    "nuclide-objc":
+      enableAutomaticSquareBracketInsertion: false
+    "nuclide-ocaml":
+      codeLens: false
+      codeLensCopy: false
+      enableDiagnostics: false
+    "nuclide-python":
+      autocompleteArguments: false
+      enableLinting: false
+      showGlobalVariables: false
+    "nuclide-quick-open":
+      useSelection: false
+    "nuclide-related-files":
+      openInNextPane: false
+    "nuclide-remote-atom":
+      shouldNotifyWhenCommandLineIsWaitingOnFile: false
+    "nuclide-terminal":
+      documentationMessage: false
+    "nuclide-type-coverage":
+      colorizeStatusBar: false
+    "nuclide-vcs-log":
+      showDifferentialRevision: false
+    use: {}
+    useLocalRpc: false
+  "platformio-ide-terminal":
+    core:
+      shell: "/usr/local/bin/fish"
+    toggles:
+      autoClose: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      showInStatusBar: true
+    prettierOptions:
+      singleQuote: true
+    useEslint: true
+  "terminal-plus":
+    core: {}
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+".al.infer.source":
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
+    showIndentGuide: false
+".ansi.text":
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
+    showIndentGuide: false
+".diff.mercurial.source":
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
+    showIndentGuide: false
+".hack.html.text":
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
+    showIndentGuide: false
+".hackfragment.source":
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
+    showIndentGuide: false
+".reason.source":
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
+    showIndentGuide: false

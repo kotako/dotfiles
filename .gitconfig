@@ -1,0 +1,14 @@
+[user]
+	name = kotako
+	email = sy.empress0321@gmail.com
+[core]
+	excludefile = /Users/kotako/.gitignore
+	editor = vim
+[alias]
+  a = add .
+	c = commit -m
+	b = branch
+	co = checkout
+  s = status
+	l = log
+	b = branch
