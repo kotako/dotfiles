@@ -30,7 +30,7 @@
   "linter-ui-default":
     alwaysTakeMinimumSpace: true
     hidePanelWhenEmpty: false
-    panelHeight: 245
+    panelHeight: 144
     showPanel: true
   "platformio-ide-terminal":
     core:
@@ -45,6 +45,8 @@
       singleQuote: true
     useEslint: true
     useStylelint: true
+  tester:
+    statusBarOnClick: "results"
   "tree-view": {}
   welcome:
     showOnStartup: false

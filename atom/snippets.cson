@@ -32,7 +32,7 @@
     'body': 'return $1;$2'
   'arrow func':
     'prefix': 'a'
-    'body': '=>'
+    'body': '=> '
   'import':
     'prefix': 'i'
     'body': "import $1 from '$2';$3"
@@ -47,28 +47,61 @@
     'body': 'const $1 = ($2) => $3;'
   'console log':
     'prefix': 'log'
-    'body': 'console.log $1'
+    'body': 'console.log($1);$2'
   # flow
   'define flow type':
     'prefix': 'f'
     'body': '// @flow'
-  'import flow type':
-    'prefix': 'fo'
-    'body': "import type {$1} from '$2';$3"
+  'export type':
+    'prefix': 'et'
+    'body': 'export type $1 = $2;$3'
+  'import type':
+    'prefix': 'it'
+    'body': "import type { $1 } from '$2';$3"
   # react
   'react import':
-    'prefix': 'ri'
+    'prefix': 'ir'
     'body': "import React from 'react';"
   'react init':
     'prefix': 'rr'
-    'body': """
-    import React from 'react';
-
-    """
+    'body': "import React from 'react';"
   'react init with flow':
     'prefix': 'rrf'
     'body': """
       // @flow
 
       import React from 'react';
+    """
+    # redux
+  'export reducer':
+    'prefix': 'rdr'
+    'body':"""
+      // @flow
+
+      import type { State, Action} from '../../types';
+
+      const initialState = {};
+
+      export default (state: State = initialState, action: Action): State => {
+        switch(action.type) {
+          case $2:
+            return $3;
+        }
+      };
+    """
+  'redux container':
+    'prefix': 'rdc'
+    'body': """
+      // @flow
+
+      import { connect } from 'react-redux';
+      import $1 from '$2';
+
+      import type { State, Dispatch } from '../../types';
+
+      const mapStateToProps = (state: State): Object => ({$3});
+
+      const mapDispatchToProps = (dispatch: Dispatch): Object => ({$4});
+
+      export default connect(mapStateToProps, mapDispatchToProps)($1);$5
     """
