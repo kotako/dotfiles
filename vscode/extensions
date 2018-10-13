@@ -1,5 +1,17 @@
-austin.vscode-twitter
+# Editor
+vscodevim.vim
 CoenraadS.bracket-pair-colorizer
+shardulm94.trailing-spaces
+robertohuertasm.vscode-icons
+
+# Dart/Flutter
+dart-code.dart-code
+dart-code.flutter
+luanpotter.dart-import
+
+# Ruby
 misogi.ruby-rubocop
 rebornix.ruby
-vscodevim.vim
+
+# Twitter
+austin.vscode-twitter
