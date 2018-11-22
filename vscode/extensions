@@ -1,11 +1,24 @@
-austin.vscode-twitter
-CoenraadS.bracket-pair-colorizer
-misogi.ruby-rubocop
-rebornix.ruby
+# Editor
 vscodevim.vim
-robertohuertasm.vscode-icons
+CoenraadS.bracket-pair-colorizer
 shardulm94.trailing-spaces
-esbenp.prettier-vscode
+robertohuertasm.vscode-icons
 ionutvmi.path-autocomplete
 ibm.output-colorizer
 oderwat.indent-rainbow
+
+# Dart/Flutter
+dart-code.dart-code
+dart-code.flutter
+luanpotter.dart-import
+
+# Ruby
+misogi.ruby-rubocop
+rebornix.ruby
+vscodevim.vim
+
+# JavaScript
+esbenp.prettier-vscode
+
+# Twitter
+austin.vscode-twitter

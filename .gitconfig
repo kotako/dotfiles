@@ -2,13 +2,15 @@
 	name = kotako
 	email = sy.empress0321@gmail.com
 [core]
-	excludefile = /Users/kotako/.gitignore
+	excludefile = ~/.gitignore_global
 	editor = vim
 [alias]
   a = add .
 	c = commit -m
 	b = branch
+	d = diff
 	co = checkout
   s = status
+	sh = show
 	l = log
-	b = branch
+	m = merge
