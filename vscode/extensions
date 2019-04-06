@@ -3,6 +3,9 @@ vscodevim.vim
 CoenraadS.bracket-pair-colorizer
 shardulm94.trailing-spaces
 robertohuertasm.vscode-icons
+ionutvmi.path-autocomplete
+ibm.output-colorizer
+oderwat.indent-rainbow
 
 # Dart/Flutter
 dart-code.dart-code
@@ -12,6 +15,10 @@ luanpotter.dart-import
 # Ruby
 misogi.ruby-rubocop
 rebornix.ruby
+vscodevim.vim
+
+# JavaScript
+esbenp.prettier-vscode
 
 # Twitter
 austin.vscode-twitter
