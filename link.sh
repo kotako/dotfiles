@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-echo "link home dotfiles"
+echo "create symlinks"
 
-ln -snfv ~/dotfiles/.gitconfig ~/.gitconfig
-ln -snfv ~/dotfiles/.gitignore_global ~/.gitignore_global
-ln -snfv ~/dotfiles/fish/* ~/.config/fish
-ln -snfv ~/dotfiles/atom/* ~/.atom
-
-echo "linked dotfiles"
+ln -snfv ${pwd}/.gitconfig ~/.gitconfig
+ln -snfv ${pwd}/.gitignore_global ~/.gitignore_global
+ln -snfv ${pwd}/.zshrc ~/.zshrc
+# ln -snfv ${pwd}/fish/* ~/.config/fish
+# ln -snfv ${pwd}/atom/* ~/.atom
