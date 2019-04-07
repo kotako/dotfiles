@@ -13,7 +13,7 @@ module.exports = {
 
     // font family with optional fallbacks
     fontFamily:
-      'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+      '"DejaVu Sans Mono for Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
@@ -108,6 +108,10 @@ module.exports = {
       // OPTIONS: 'dark', 'ultra-dark', 'bright'
       // NOTE: The backgroundOpacity should be between 0.1 and 0.9 to see the effect.
       vibrancy: "dark"
+    },
+
+    hyperline: {
+      plugins: ["hostname", "ip", "cpu", "memory", "battery"]
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
