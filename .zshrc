@@ -38,6 +38,13 @@ setopt hist_reduce_blanks
 setopt share_history
 setopt EXTENDED_HISTORY
 
+# Move cursor with Vim keybind
+zmodload zsh/complist
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+
 # Show icon, title with Hyper
 ## Override auto-title when static titles are desired
 title() {
