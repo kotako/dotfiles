@@ -3,6 +3,7 @@
 # Plugins
 source ~/.zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "agnoster/agnoster-zsh-theme", use:agnoster.zsh-theme, as:theme
