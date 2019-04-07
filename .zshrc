@@ -37,6 +37,36 @@ setopt hist_reduce_blanks
 setopt share_history
 setopt EXTENDED_HISTORY
 
+# Show icon, title with Hyper
+## Override auto-title when static titles are desired
+title() {
+    export TITLE_OVERRIDDEN=1
+    echo -en "\e]0;$*\a"
+}
+
+## Turn off static titles ($ autotitle)
+autotitle() { export TITLE_OVERRIDDEN=0 }
+autotitle
+
+## Condition checking if title is overridden
+overridden() { [[ $TITLE_OVERRIDDEN == 1 ]]; }
+
+## Echo asterisk if git state is dirty
+gitDirty() { [[ $(git status 2> /dev/null | grep -o '\w\+' | tail -n1) != ("clean"|"") ]] && echo "*" }
+
+## Show cwd when shell prompts for input
+precmd() {
+   if overridden; then return; fi
+   cwd=${$(pwd)##*/}
+   print -Pn "\e]0;$cwd$(gitDirty)\a"
+}
+
+## Prepend command (w/o arguments) to cwd while waiting for command to complete
+preexec() {
+   if overridden; then return; fi
+   printf "\033]0;%s\a" "${1%% *} | $cwd$(gitDirty)"
+}
+
 # Alias
 ## General
 alias e='exit'
