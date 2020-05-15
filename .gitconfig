@@ -2,7 +2,6 @@
 	name = kotako
 	email = sy.empress0321@gmail.com
 [core]
-	excludefile = ~/.gitignore_global
 	editor = vim
 [alias]
   a = add .
