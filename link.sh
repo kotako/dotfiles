@@ -10,5 +10,7 @@ do
 done
 
 ln -snfv `pwd`/git/* ~/.config/git
+
+# shell とか使うのを選択式にしてもいいかも？
 # ln -snfv `pwd`/fish/* ~/.config/fish
 # ln -snfv `pwd`/atom/* ~/.atom
