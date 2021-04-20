@@ -8,7 +8,10 @@ do
     [[ $dotfile =~ $IGNORE_PATTERN ]] && continue
     ln -snfv "$(pwd)/$dotfile" "$HOME/$dotfile"
 done
-ln -snfv `pwd`/git/* ~/.config/git
+if [ ! -d "$HOME/.config" ]; then
+    mkdir "$HOME/.config"
+fi
+ln -snfv "$(pwd)/git/*" "$HOME/.config/git"
 echo "Done"
 
 echo "Install Homebrew..."
