@@ -15,7 +15,9 @@ ln -snfv "$(pwd)/git/*" "$HOME/.config/git"
 echo "Done"
 
 echo "Install Homebrew..."
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if ! type "brew" > /dev/null 2>&1; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 echo "Update Homebrew..."
 brew update && brew upgrade && brew cask upgrade
 echo "Install formulaes, casks..."
