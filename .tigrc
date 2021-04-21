@@ -5,6 +5,13 @@ set diff-view = line-number:yes,interval=1 text
 set blob-view = line-number:yes,interval=1 text
 set log-view = line-number:yes,interval=1 text
 
+# Limit number of commits loaded by default to 500
+set main-options = -n 500
+
 # bind R to rebase
 bind main R !git rebase -i %(commit)
 bind diff R !git rebase -i %(commit)
+
+# bind + to commit --amend
+bind diff + !git commit --amend
+
