@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-IGNORE_PATTERN="^\.(gitignore)"
+IGNORE_PATTERN="^\.(gitignore|git)"
 
 echo "Create dotfile link..."
 for dotfile in .??*
