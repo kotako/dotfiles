@@ -13,5 +13,5 @@ bind main R !git rebase -i %(commit)
 bind diff R !git rebase -i %(commit)
 
 # bind + to commit --amend
-bind general + !git commit --amend
+bind generic + !git commit --amend
 
