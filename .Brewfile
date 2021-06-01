@@ -15,6 +15,7 @@ brew "ruby"
 brew "the_silver_searcher"
 brew "tig"
 brew "zsh"
+brew "zplug"
 
 cask "hyper"
 cask "visual-studio-code"
