@@ -75,6 +75,9 @@ preexec() {
    printf "\033]0;%s\a" "${1%% *} | $cwd$(gitDirty)"
 }
 
+# Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Alias
 ## General
 alias e='exit'
